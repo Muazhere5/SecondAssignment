@@ -309,3 +309,129 @@ body {
     display: none;
   }
 }
+
+.latest-deals-section {
+  padding: 60px 20px;
+  background-color:  #f9fbff;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.deals-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.deals-header h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+}
+
+.deals-header .highlight {
+  color: #f15a24;
+}
+
+.deals-header p {
+  font-size: 16px;
+  color: black;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+.deals-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  align-items: stretch;
+}
+
+
+.deals-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.deal-card {
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  
+  
+
+
+}
+
+.deal-card:hover {
+  transform: scale(1.02);
+}
+
+.small-card {
+  height: 180px;
+}
+
+.big-card {
+  height: 100%;
+  min-height: 380px;
+}
+
+.deal-text {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+.deal-text h3 {
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+}
+
+.deal-text a {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 14px;
+  color: #fcd34d;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+.big-text h3 {
+  font-size: 28px;
+}
+
+.big-text a {
+  font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+  .deals-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .deals-left {
+    flex-direction: column;
+  }
+
+  .deal-card {
+    height: 200px;
+  }
+
+  .big-card {
+    height: 240px;
+  }
+}
