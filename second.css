@@ -1,5 +1,5 @@
 
-/* Base reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ body {
   line-height: 1.6;
 }
 
-/* Navbar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -66,7 +66,7 @@ body {
   font-size: 0.9rem;
 }
 
-/* Banner Section */
+
 .banner {
   display: flex;
   justify-content: space-between;
@@ -105,7 +105,7 @@ body {
   max-width: 35rem;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .nav-menu {
     display: none;
@@ -126,7 +126,7 @@ body {
   }
 
   .banner-img {
-    order: -1; /* Show image first on mobile */
+    order: -1; 
     text-align: center;
     margin-bottom: 1.5rem;
   }
@@ -228,5 +228,84 @@ body {
 
   .subtitle {
     font-size: 0.95rem;
+  }
+}
+
+
+.plants-lover-section {
+  padding: 60px 20px;
+  background-color: #f9fbff;
+  color: #322a2a; 
+}
+
+.plants-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.plants-image-container {
+  position: relative;
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+.plants-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.trusted-badge {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 100px;
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.plants-text {
+  flex: 1 1 400px;
+  max-width: 600px;
+  text-align: left;
+}
+.plants-text .highlight{
+    color: #f15a24;
+
+}
+
+.plants-text h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.plants-text ul {
+  padding-left: 20px;
+  list-style-type: none;
+  margin-top: 3.5rem;
+}
+
+.plants-text li {
+  margin-bottom: 12px;
+  color:black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+@media (max-width: 768px) {
+  .plants-container {
+    flex-direction: column;
+  }
+
+  .trusted-badge {
+    display: none;
   }
 }
